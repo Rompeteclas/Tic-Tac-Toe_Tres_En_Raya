@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@300&family=Press+Start+2P&display=swap');
+
+:root {
+    --primary: #fc424e;    
+    --secondary: #16DB93;
+    --bg: #373d40;
+    --bgs:#EDF2F4;
+}
+body{
+display: grid;
+align-content: center;
+justify-content: center;
+font-family:'Inter' 'Press Start 2P', 'Montserrat',;
+overflow: hidden;
+background-color: var(--bgs);
+}
+.ttt{
+width: 450px;
+height: 600px;
+min-width: 350px;
+display: grid;
+margin-top: 1em;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 5fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: var(--bg);
+border: 0;
+}
+
+.header { grid-area: 1 / 1 / 2 / 2;
+    
+    font-family: 'Inter';
+    letter-spacing: 0.25em; 
+    word-spacing: 0.25em;
+    font-size: 18px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+#game { grid-area: 2 / 1 / 3 / 2; 
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+table
+    {display: grid;
+    align-content: center;
+    justify-content: center;
+    border-spacing: 2px;
+
+}
+td {
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--primary);
+    font-size: 50px;
+    color: var(--bgs);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    vertical-align: middle;
+}
+#winner{
+    position: absolute;
+    padding-top: 1.5em;
+    width: 450px;
+    min-width: 350px;
+    font-size: 15px;
+    color: var(--secondary);
+    text-align: center;
+    font-family: "Inter";
+
+}
+button{
+    width: 450px;
+    min-width: 350px;
+
+    height: 4em;
+    background-color: var(--primary);
+    border:0;
+    font-family: 'Inter';
+    font-size: 1.2em;
+    color: var(--bgs);
+    padding: 0;
+}
+footer{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size:0.65em;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a{
+    color: var(--bg);
+
+}
+footer ul li a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+}
+.footer_social {
+    padding-top: 0.2em;
+    display: flex;
+    font-size: 2.5rem;
+     justify-content: space-evenly;
+}
+.footer_copyright {
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 1.1rem 0;
+    border-top: 1px solid var(--bg);
+}
+@media screen and (max-width:450px) {
+
+    .header { grid-area: 1 / 1 / 2 / 2;
+       font-size: 15px;
+    }    
+    .ttt{
+        width: 350px;    
+        height: 500px;    
+    }
+    
+#winner{
+    position: absolute;
+    padding-top: 1.5em;
+    width: 350px;   
+    font-size: 13px;
+    padding-top: 0;
+}
+button{
+    width: 350px;
+ 
+}
+}   

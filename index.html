@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Tic-Tac-Toe_Tres_En_Raya Anuar Limache</title>
+  </head>
+  <body>
+    <div class="ttt">
+      <div class="header"><h1> TIC TAC TOE - TRES EN RAYA </TIC></h1></div>      
+      <div id="game">
+        <div id="winner"></div>  
+        <table>
+          <tr>
+            <td id="c0" onclick="pcelda(0)"></td>
+            <td id="c1" onclick="pcelda(1)"></td>
+            <td id="c2" onclick="pcelda(2)"></td>
+          </tr>
+          <tr>
+            <td id="c3" onclick="pcelda(3)"></td>
+            <td id="c4" onclick="pcelda(4)"></td>
+            <td id="c5" onclick="pcelda(5)"></td>
+          </tr>
+          <tr>
+            <td id="c6" onclick="pcelda(6)"></td>
+            <td id="c7" onclick="pcelda(7)"></td>
+            <td id="c8" onclick="pcelda(8)"></td>
+          </tr>          
+        </table>
+           
+     </div>
+      <a href="javascript:location.reload()"> <button>REINICIAR</button></a>
+    </div>
+  </body>
+  <footer>
+            <ul class="footer_social">
+                <li><a href="https://www.linkedin.com/in/anuarlimache"> <i class="fa fa-linkedin-square"></i> </a></li>
+                <li><a href="https://github.com/Rompeteclas"> <i class="fa fa-github-square"></i> </a></li>
+            </ul>
+        <div class="footer_copyright">
+            <small>Copyright &copy;2022-<script>document.write(new Date().getFullYear())</script>  Developer by Anuar Limache</small>
+        </div>
+  </footer>
+  <script src="js/code.js"></script>
+</html>
